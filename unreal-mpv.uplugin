@@ -1,0 +1,25 @@
+{
+	"FileVersion": 1,
+	"Version": 0,
+	"VersionName": "0.1",
+	"FriendlyName": "Unreal MPV Player",
+	"Description": "Implementation of mpv media player",
+	"Category": "Virtual Production",
+	"CreatedBy": "Versa",
+	"CreatedByURL": "https://github.com/VersaYT",
+	"MarketplaceURL": "",
+	"SupportURL": "https://github.com/VersaYT/unreal-mpv",
+	"EnabledByDefault": false,
+	"CanContainContent": false,
+	"IsBetaVersion": true,
+	"Installed": false,
+	"Modules": [],
+	"Plugins": [
+		{
+			"Name": "MediaIOFramework",
+			"Enabled": true
+		}
+	],
+	"DocsURL": "",
+	"IsExperimentalVersion": false
+}
