@@ -13,5 +13,12 @@
 	"CanContainContent": true,
 	"IsBetaVersion": true,
 	"IsExperimentalVersion": false,
-	"Installed": false
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "UnrealMPV",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
 }

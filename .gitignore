@@ -1,0 +1,6 @@
+.vs
+.vsconfig
+.editorconfig
+Binaries/
+Intermediate/
+Saved/
