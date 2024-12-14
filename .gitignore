@@ -1,6 +1,8 @@
 .vs
 .vsconfig
-.editorconfig
-Binaries/
+.editorconfig/
+/Binaries
+Plugins/bonjoureu
+
 Intermediate/
 Saved/

@@ -3,7 +3,7 @@
 #include "Modules/ModuleInterface.h"
 #include "Modules/ModuleManager.h"
 
-class FUnrealMpvModule : public IModuleInterface 
+class FUnrealMpvLibModule : public IModuleInterface 
 {
 public:
 

@@ -1,12 +1,13 @@
 // Copyright Epic Games, Inc. All Rights Reserved.
-
+using System;
+using System.IO;
 using UnrealBuildTool;
 
 public class unreal_mpv : ModuleRules
 {
 	public unreal_mpv(ReadOnlyTargetRules Target) : base(Target)
 	{
-		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+        PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
         PublicDependencyModuleNames.AddRange(new string[] {
 			"Core",
@@ -17,9 +18,9 @@ public class unreal_mpv : ModuleRules
 		
 		});
 
-		PrivateDependencyModuleNames.AddRange(new string[] {
-			"unreal_mpv"
-		});
+        PrivateDependencyModuleNames.AddRange(new string[] {
+            "unreal_mpv"
+        });
 
         // Uncomment if you are using Slate UI
         // PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });

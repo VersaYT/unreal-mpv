@@ -1,17 +1,11 @@
 using UnrealBuildTool;
+using System;
 using System.IO;
 
-namespace UnrealBuildTool.Rules
-{
-    public class UnrealMPV : ModuleRules
+    public class UnrealMpv: ModuleRules
     {
-        public UnrealMPV(ReadOnlyTargetRules Target) : base(Target)
+        public UnrealMpv(ReadOnlyTargetRules Target) : base(Target)
         {
-            PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
-
-            PublicIncludePaths.Add(Path.Combine(ModuleDirectory, "../../Dependencies/mpv/libmpv"));
-            PublicSystemLibraryPaths.Add(Path.Combine(ModuleDirectory, "../../Dependencies/mpv/libmpv"));
-            PublicAdditionalLibraries.Add(Path.Combine(ModuleDirectory, "../../Dependencies/mpv/build/libmpv.a"));
 
             PublicIncludePaths.AddRange(
                 new string[] {
@@ -28,7 +22,7 @@ namespace UnrealBuildTool.Rules
             PublicDependencyModuleNames.AddRange(
                 new string[]
                 {
-                    "Core","CoreUObject", "Engine"
+                    "Core","CoreUObject", "Engine","Projects", "UnrealMpvLib"
 					// ... add other public dependencies that you statically link with here ...
 				}
                 );
@@ -48,4 +42,3 @@ namespace UnrealBuildTool.Rules
                 );
         }
     }
-}
