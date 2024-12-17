@@ -69,7 +69,7 @@ The compilation will provide us a dll file, we now need to generate the .lib
 gendef libmpv.dll
 
 # generate .lib file
-lib /name:libmpv-2.dll /out:libmpv.lib /MACHINE:X64
+lib /def:libmpv.def /out:libmpv.lib /MACHINE:X64
 ```
 
 Place the newly generated "libmpv-2.dll" at (Plugins/unreal_mpv/Binaries/Win64/)
